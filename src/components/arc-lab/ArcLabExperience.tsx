@@ -256,7 +256,7 @@ export default function ArcLabExperience() {
 
       <Tabs value={section} onValueChange={changeSection}>
         <main className={styles.pageContent} id="top">
-          <TabsContent value="home">
+          <TabsContent value="home" className="h-full">
             <section className={styles.homeHero} aria-labelledby="home-title">
               <div className={styles.heroCopy}>
                 <span className={styles.eyebrow}>
@@ -335,7 +335,7 @@ export default function ArcLabExperience() {
             </ol>
           </TabsContent>
 
-          <TabsContent value="learn">
+          <TabsContent value="learn" className="h-full">
             <section aria-labelledby="learn-title">
               <div className={styles.sectionHeading}>
                 <div>
@@ -421,7 +421,7 @@ export default function ArcLabExperience() {
             </section>
           </TabsContent>
 
-          <TabsContent value="explore">
+          <TabsContent value="explore" className="h-full">
             <section aria-labelledby="explore-title">
               <div className={styles.sectionHeading}>
                 <div>
@@ -544,7 +544,7 @@ export default function ArcLabExperience() {
             </section>
           </TabsContent>
 
-          <TabsContent value="play">
+          <TabsContent value="play" className="h-full">
             {!runFinished && question ? (
               <section aria-labelledby="challenge-title">
                 <div className={styles.sectionHeading}>
