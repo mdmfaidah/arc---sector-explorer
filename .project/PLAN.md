@@ -33,3 +33,5 @@ Arc Lab turns arc length and sector area into a hands-on geometry game. Students
 - Multiplayer, leaderboards, and classroom assignment tools.
 - Audio narration and sound effects.
 - Open-ended geometry drawing or graphing tools.
+
+<!-- Built by the platform on 2026-10-12. -->
