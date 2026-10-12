@@ -1,14 +1,28 @@
 <!-- Generated from .project/PROJECT.md by the engine — do not run `impeccable init`, which would interview a user who isn't here. Edit .project/PROJECT.md; this file is regenerated from it. -->
-# workspace
+# Arc Lab
 
 **Platform:** Responsive web — Next.js, React, Tailwind. shadcn/ui and lucide are installed and available; the direction decides whether they fit or whether this surface needs its own vocabulary.
-**Task mode:** Operate (pass as `--mode operate` to any script)
+**Task mode:** Persuade (pass as `--mode persuade` to any script)
 
 ## What this is
 
-let's implement the plan
+A touch-friendly geometry learning game for arc length, sector area, and radians.
+
+## What it enables
+
+Help students understand circle measures through visual lessons, a live explorer, and scored practice.
+
+## Primary user
+
+Secondary-school students learning arc length, sector area, and radian measure.
+
+## What exists today
+
+A responsive landing screen with Learn, Explore, and Challenge sections. - Worked formulas and examples for degree and radian measures. - A live circle explorer with adjustable radius and angle. - A ten-question game with hints, retries, scoring, streaks, and feedback. - Local progress for reviewed lessons, correct answers, and best score.
 
 ## Brand commitments & durable constraints
+
+Visual preference is pinned to the conventional, familiar geometry-learning game category; the user delegated the visual choice. - Keep the experience usable by keyboard and touch, including iPad portrait and landscape. - Keep learning content focused on arc length, sector area, and radian measure. - Store student progress locally; accounts and classroom features are out of scope.
 
 - **The user is present and IS choosing the visual direction.** Offer six materially different grounded directions through the design-picker command and STOP; the answer arrives as your next input and the chosen direction is then pinned, exactly as if the user had named it. Do not build a direction before asking, do not narrow the six to a favourite, and do not ask about anything else in the same breath — this one decision is the whole card.
 - **Ask ONLY when the direction is genuinely open**: this project has no committed visual world yet, or the user asked to redesign the whole app. A later change inside a committed world inherits it — asking again there is an interruption, not a courtesy.
@@ -28,11 +42,15 @@ let's implement the plan
 
 ## Positioning
 
-let's implement the plan
+A touch-friendly geometry learning game for arc length, sector area, and radians.
 
 ## Operating Context
 
-Responsive web, built unattended in one pass. Task mode: Operate.
+Responsive web, built unattended in one pass. Task mode: Persuade.
+
+## Evidence on Hand
+
+A responsive landing screen with Learn, Explore, and Challenge sections. - Worked formulas and examples for degree and radian measures. - A live circle explorer with adjustable radius and angle. - A ten-question game with hints, retries, scoring, streaks, and feedback. - Local progress for reviewed lessons, correct answers, and best score.
 
 ## Product Principles
 

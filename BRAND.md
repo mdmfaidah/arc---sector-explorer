@@ -1,7 +1,19 @@
 ---
-name: "workspace"
-slug: "workspace"
-one_liner: "let's implement the plan"
+name: "Arc Lab"
+slug: "arc-lab"
+one_liner: "A touch-friendly geometry learning game for arc length, sector area, and radians."
+audience: "Secondary-school students learning arc length, sector area, and radian measure."
+value_props:
+  - "A responsive landing screen with Learn, Explore, and Challenge sections"
+  - "Worked formulas and examples for degree and radian measures"
+  - "A live circle explorer with adjustable radius and angle"
+  - "A ten-question game with hints, retries, scoring, streaks, and feedback"
+  - "Local progress for reviewed lessons, correct answers, and best score"
+ctas:
+  - "Start challenge"
+  - "Learn the formulas"
+  - "Degrees"
+  - "Radians"
 typography:
   mono: "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace"
 ---
@@ -10,7 +22,7 @@ typography:
 
 ## What this is
 
-The brand facts workspace itself settled: what it is called, what it says it does, who the brain says it is for, the tokens the shipped code was checked against, and the call-to-action text on its own landing page. The values above are normative and readable without a model.
+The brand facts Arc Lab itself settled: what it is called, what it says it does, who the brain says it is for, the tokens the shipped code was checked against, and the call-to-action text on its own landing page. The values above are normative and readable without a model.
 
 `proposed:` is the exception — it is read off the committed visual direction and offered as a starting point, not recorded as a decision.
 

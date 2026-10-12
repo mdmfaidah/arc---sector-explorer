@@ -1,6 +1,6 @@
 ---
-name: "workspace"
-description: "let's implement the plan"
+name: "Arc Lab"
+description: "A touch-friendly geometry learning game for arc length, sector area, and radians."
 typography:
   mono:
     fontFamily: "ui-monospace, SFMono-Regular, \"SF Mono\", Menlo, Consolas, \"Liberation Mono\", monospace"
@@ -18,7 +18,7 @@ rounded:
 
 ## Overview
 
-**No visual direction has been committed for workspace yet.** The project is still on the starter's placeholder palette — shadcn's default neutral, every colour zero-chroma — so it is deliberately NOT listed above as a token set to respect. Treat this project as greenfield: decide the world, then write the palette into `globals.css`, and this file will state it from the next turn onward.
+**No visual direction has been committed for Arc Lab yet.** The project is still on the starter's placeholder palette — shadcn's default neutral, every colour zero-chroma — so it is deliberately NOT listed above as a token set to respect. Treat this project as greenfield: decide the world, then write the palette into `globals.css`, and this file will state it from the next turn onward.
 
 ## Colors
 

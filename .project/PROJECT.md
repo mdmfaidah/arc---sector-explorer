@@ -1,22 +1,27 @@
-<!-- OWNER: Build (with the user) · READERS: every agent · READ THIS FIRST -->
-# {{PROJECT_NAME}}
+# Arc Lab
 
-**One-liner:** {{what it is, in one sentence}}
+**One-liner:** A touch-friendly geometry learning game for arc length, sector area, and radians.
 
 ## Goal
-{{the outcome the user actually wants}}
+Help students understand circle measures through visual lessons, a live explorer, and scored practice.
 
 ## Target users
-{{who it's for}}
+Secondary-school students learning arc length, sector area, and radian measure.
 
 ## Status
-- Stage: {{idea | building | live}}
-- Live URL: {{url or —}}
-- Repo: {{repo or —}}
+- Stage: building
+- Live URL: —
+- Repo: —
 
 ## What exists today
-<!-- Kept current by the Build agent after each build -->
-{{high-level list of built features}}
+- A responsive landing screen with Learn, Explore, and Challenge sections.
+- Worked formulas and examples for degree and radian measures.
+- A live circle explorer with adjustable radius and angle.
+- A ten-question game with hints, retries, scoring, streaks, and feedback.
+- Local progress for reviewed lessons, correct answers, and best score.
 
 ## Constraints / must-nots
-{{anything every agent must respect — brand rules, no-gos, tech limits}}
+- Visual preference is pinned to the conventional, familiar geometry-learning game category; the user delegated the visual choice.
+- Keep the experience usable by keyboard and touch, including iPad portrait and landscape.
+- Keep learning content focused on arc length, sector area, and radian measure.
+- Store student progress locally; accounts and classroom features are out of scope.
