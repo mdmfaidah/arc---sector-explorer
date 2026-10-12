@@ -25,9 +25,6 @@ export default function CircleDiagram({
   const startY = center + circleRadius * Math.sin(startRadians);
   const endX = center + circleRadius * Math.cos(endRadians);
   const endY = center + circleRadius * Math.sin(endRadians);
-  const largeArc = angleDegrees > 180 ? 1 : 0;
-  const arcPath = `M ${startX} ${startY} A ${circleRadius} ${circleRadius} 0 ${largeArc} 1 ${endX} ${endY}`;
-  const sectorPath = `M ${center} ${center} L ${startX} ${startY} A ${circleRadius} ${circleRadius} 0 ${largeArc} 1 ${endX} ${endY} Z`;
   const labelAngle = startAngle + Math.min(angleDegrees, 180) / 2;
   const labelRadians = (labelAngle * Math.PI) / 180;
   const angleTextX = center + 32 * Math.cos(labelRadians);
@@ -42,13 +39,36 @@ export default function CircleDiagram({
       className={className}
     >
       <circle className="diagramCircle" cx={center} cy={center} r={circleRadius} />
-      {sector && <path className="diagramSector" d={sectorPath} />}
-      <path className="diagramArc" d={arcPath} />
+      <circle
+        className="diagramSector"
+        cx={center}
+        cy={center}
+        r={circleRadius / 2}
+        pathLength={360}
+        strokeWidth={circleRadius}
+        strokeDasharray={`${sector ? angleDegrees : 0} 360`}
+        strokeLinecap="butt"
+        transform={`rotate(-90 ${center} ${center})`}
+      />
+      <circle
+        className="diagramArc"
+        cx={center}
+        cy={center}
+        r={circleRadius}
+        pathLength={360}
+        strokeDasharray={`${angleDegrees} 360`}
+        transform={`rotate(-90 ${center} ${center})`}
+      />
       <line className="diagramRadius" x1={center} y1={center} x2={startX} y2={startY} />
       <line className="diagramRadius" x1={center} y1={center} x2={endX} y2={endY} />
-      <path
+      <circle
         className="diagramAngle"
-        d={`M ${center} ${center - 26} A 26 26 0 ${angleDegrees > 180 ? 1 : 0} 1 ${center + 26 * Math.cos(endRadians)} ${center + 26 * Math.sin(endRadians)}`}
+        cx={center}
+        cy={center}
+        r="26"
+        pathLength={360}
+        strokeDasharray={`${angleDegrees} 360`}
+        transform={`rotate(-90 ${center} ${center})`}
       />
       <circle className="diagramCenter" cx={center} cy={center} r="4" />
       <text className="diagramLabel" x={center + 7} y={center - 8}>

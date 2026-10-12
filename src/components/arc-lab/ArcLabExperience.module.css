@@ -301,7 +301,9 @@
 }
 
 .experience :global(.diagramSector) {
-  fill: oklch(0.56 0.19 255 / 0.13);
+  fill: none;
+  stroke: oklch(0.56 0.19 255 / 0.13);
+  transition: stroke-dasharray 620ms var(--ease-out-expo);
 }
 
 .experience :global(.diagramArc) {
@@ -309,6 +311,7 @@
   stroke: var(--lab-orange);
   stroke-linecap: round;
   stroke-width: 5;
+  transition: stroke-dasharray 620ms var(--ease-out-expo);
 }
 
 .experience :global(.diagramRadius) {
@@ -320,6 +323,7 @@
   fill: none;
   stroke: var(--lab-blue);
   stroke-width: 1.5;
+  transition: stroke-dasharray 620ms var(--ease-out-expo);
 }
 
 .experience :global(.diagramCenter) {
